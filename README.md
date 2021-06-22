@@ -66,6 +66,16 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 df.plot('dt', 'close', figsize = [20,10])
 ```
 
+### 討論
+Q1.數據是否正確?
+A.正確，但是2330台積電的20210622股價走勢，拿奇摩股市與實作結果相比沒什麼比較性，所以我另外查詢了2610華航的20210622股價走勢，可以發現相似度極高
+
+< 2610(實作結果)
+![image](https://github.com/happy34083408/CS381A/blob/main/2610.jpg)
+
+< 2610華航(奇摩股市)
+![image](https://github.com/happy34083408/CS381A/blob/main/yahoo2610.jpg)
+
 ### 參考
 - 套件:https://weikaiwei.com/finance/python-stock-crawler/
 - python繪圖:https://medium.com/%E6%95%B8%E6%93%9A%E4%B8%8D%E6%AD%A2-not-only-data/%E6%B7%B1%E5%85%A5%E6%B7%BA%E5%87%BA-python-%E8%A6%96%E8%A6%BA%E5%8C%96%E5%A5%97%E4%BB%B6-matplotlib-seaborn-%E6%A0%B8%E5%BF%83%E6%8C%87%E5%8D%97%E8%88%87%E7%B9%AA%E8%A3%BD-44a47458912
