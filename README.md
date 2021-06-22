@@ -13,7 +13,7 @@
 ### 程式實作
 我使用了Jupyter Notebook當作開發環境
 
-> 開啟cmd命令提示字元，安裝爬蟲所需的套件
+> 1.開啟cmd命令提示字元，安裝爬蟲所需的套件
 ![image](https://github.com/happy34083408/CS381A/blob/main/cmd.jpg)
 ```
 pip install requests
@@ -21,7 +21,7 @@ pip install pandas
 pip install lxml
 ```
 
-> 使用**requests**套件，並且在奇摩股市的API透過**get**抓取資料
+> 2.使用**requests**套件，並且在奇摩股市的API透過**get**抓取資料，使用者輸入代碼指定給stock
 ```
 import requests
 stock=input("請輸入股票代碼")
@@ -29,22 +29,22 @@ res = requests.get('https://tw.stock.yahoo.com/_td-stock/api/resource/FinanceCha
 res
 ```
 
-> 將資料存取在**json**，**json**可以當作個字典
+> 3.將資料存取在**json**，**json**可以當作個字典
 ```
 jd = res.json()['data']
 ```
 
-> 分析資料後，取得收盤價
+> 4.分析資料後，取得收盤價**close**
 ```
 close = jd[0]['chart']['indicators']['quote'][0]['close']
 ```
 
-> 取得時間搓
+> 5.取得時間搓**timestamp**
 ```
 timestamp = jd[0]['chart']['timestamp']
 ```
 
-> 把取得的資料結果暫時呈現出來，這邊**timestamp**的時間是unix time
+> 6.把取得的資料結果暫時呈現出來，這邊**timestamp**的時間是unix time
 ![image](https://github.com/happy34083408/CS381A/blob/main/df.jpg)
 ```
 import pandas
@@ -52,12 +52,12 @@ df = pandas.DataFrame({'timestamp': timestamp, 'close':close})
 df.head()
 ```
 
-> 切換成台灣時間
+> 7.切換成台灣時間
 ```
 df['dt'] = pandas.to_datetime(df['timestamp'] + 3600 * 8, unit = 's')
 ```
 
-> 把走勢圖畫出來，並且把圖放大
+> 8.把走勢圖畫出來，並且把圖放大
 ![image](https://github.com/happy34083408/CS381A/blob/main/result.jpg)
 ```
 get_ipython().run_line_magic('matplotlib', 'inline')
