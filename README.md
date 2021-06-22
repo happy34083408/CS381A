@@ -7,6 +7,7 @@
 ![image](https://github.com/happy34083408/CS381A/blob/main/twstock.jpg)
 ### 步驟
 1.直接輸入個股代碼
+![image](https://github.com/happy34083408/CS381A/blob/main/input.jpg)
 
 2.顯示個股股價的走勢
 
@@ -57,7 +58,7 @@ df.head()
 df['dt'] = pandas.to_datetime(df['timestamp'] + 3600 * 8, unit = 's')
 ```
 
-> 8.把走勢圖畫出來，並且把圖放大
+> 8.把走勢圖畫出來，並且把圖放大，(此圖為2330台積電20210622的股價走勢)
 ![image](https://github.com/happy34083408/CS381A/blob/main/result.jpg)
 ```
 get_ipython().run_line_magic('matplotlib', 'inline')
