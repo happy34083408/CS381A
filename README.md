@@ -4,6 +4,7 @@
 
 ### 簡介
 此程式利用Python網路爬蟲Yahoo股市資料，User查詢個股代碼就能觀看當日股價走勢
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/twstock.jpg)
 ### 步驟
 1.直接輸入個股代碼
@@ -47,6 +48,7 @@ timestamp = jd[0]['chart']['timestamp']
 ```
 
 > 6.把取得的資料結果暫時呈現出來，這邊**timestamp**的時間是unix time
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/df.jpg)
 ```
 import pandas
@@ -71,9 +73,11 @@ Q1.數據是否正確?
 A.正確，但是2330台積電的20210622股價走勢，拿奇摩股市與實作結果相比沒什麼比較性，所以我另外查詢了2610華航的20210622股價走勢，可以發現相似度極高
 
 < 2610(實作結果)
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/2610.jpg)
 
 < 2610華航(奇摩股市)
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/yahoo2610.jpg)
 
 ### 參考
