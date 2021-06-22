@@ -7,6 +7,7 @@
 ![image](https://github.com/happy34083408/CS381A/blob/main/twstock.jpg)
 ### 步驟
 1.直接輸入個股代碼
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/input.jpg)
 
 2.顯示個股股價的走勢
