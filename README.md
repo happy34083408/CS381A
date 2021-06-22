@@ -13,7 +13,7 @@
 ### 程式實作
 我使用了Jupyter Notebook當作開發環境
 > 開啟cmd命令提示字元，安裝爬蟲所需的套件
-![image](https://github.com/happy34083408/CS381A/blob/main/twstock.jpg)
+![image](https://github.com/happy34083408/CS381A/blob/main/cmd.jpg)
 ```
 pip install requests
 pip install pandas
