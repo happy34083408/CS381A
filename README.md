@@ -14,8 +14,8 @@
 我使用了Jupyter Notebook當作開發環境
 然後開啟cmd命令提示字元，安裝爬蟲所需的套件
 
-ˋˋˋ
+```
 pip install requests
 pip install pandas
 pip install lxml
-ˋˋˋ
+```
