@@ -34,16 +34,25 @@ res
 ```
 
 > 3.將資料存取在**json**，**json**可以當作個字典
+
+![image](https://github.com/happy34083408/CS381A/blob/main/2330data.jpg)
+
 ```
 jd = res.json()['data']
 ```
 
 > 4.分析資料後，取得收盤價**close**
+
+![image](https://github.com/happy34083408/CS381A/blob/main/2330close.jpg)
+
 ```
 close = jd[0]['chart']['indicators']['quote'][0]['close']
 ```
 
 > 5.取得時間搓**timestamp**
+
+![image](https://github.com/happy34083408/CS381A/blob/main/2330timestamp.jpg)
+
 ```
 timestamp = jd[0]['chart']['timestamp']
 ```
