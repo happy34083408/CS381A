@@ -4,7 +4,7 @@
 
 ### 簡介
 此程式利用Python網路爬蟲Yahoo股市資料，User查詢個股代碼就能觀看當日股價走勢
-
+![image](https://github.com/happy34083408/CS381A/blob/main/twstock.jpg)
 ### 步驟
 1.直接輸入個股代碼
 
