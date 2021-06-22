@@ -17,6 +17,7 @@
 我使用了Jupyter Notebook當作開發環境
 
 > 1.開啟cmd命令提示字元，安裝爬蟲所需的套件
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/cmd.jpg)
 ```
 pip install requests
@@ -62,6 +63,7 @@ df['dt'] = pandas.to_datetime(df['timestamp'] + 3600 * 8, unit = 's')
 ```
 
 > 8.把走勢圖畫出來，並且把圖放大，(此圖為2330台積電20210622的股價走勢)
+
 ![image](https://github.com/happy34083408/CS381A/blob/main/result.jpg)
 ```
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -79,6 +81,9 @@ A.正確，但是2330台積電的20210622股價走勢，拿奇摩股市與實作
 < 2610華航(奇摩股市)
 
 ![image](https://github.com/happy34083408/CS381A/blob/main/yahoo2610.jpg)
+
+Q2.實用方便嗎?
+A.我個人覺得實用，因為就跟那些開放平台的股價走勢一模一樣，如果未來還想要更多功能，都可以自己加，像是即時鎖定大量買進單的個股，一出現就跳通知，這樣就財富自由啦~
 
 ### 參考
 - 套件:https://weikaiwei.com/finance/python-stock-crawler/
